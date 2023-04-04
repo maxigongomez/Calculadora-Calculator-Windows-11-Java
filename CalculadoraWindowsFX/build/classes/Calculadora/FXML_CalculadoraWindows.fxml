@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="375.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculadora.ControladorCalculadoraWindows">
+   <children>
+      <GridPane layoutX="3.0" layoutY="104.0" prefHeight="345.0" prefWidth="372.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="cambio_signo" alignment="CENTER" mnemonicParsing="false" onAction="#cambiosigno_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="+/-" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="cero" alignment="CENTER" mnemonicParsing="false" onAction="#cero_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="0" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="uno" alignment="CENTER" mnemonicParsing="false" onAction="#uno_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="1" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="cuatro" alignment="CENTER" mnemonicParsing="false" onAction="#cuatro_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="4" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="cinco" alignment="CENTER" mnemonicParsing="false" onAction="#cinco_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="5" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="dos" alignment="CENTER" mnemonicParsing="false" onAction="#dos_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="2" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="seis" alignment="CENTER" mnemonicParsing="false" onAction="#seis_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="6" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="tres" alignment="CENTER" mnemonicParsing="false" onAction="#tres_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="3" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="punto" alignment="CENTER" mnemonicParsing="false" onAction="#punto_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="." textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="siete" alignment="CENTER" mnemonicParsing="false" onAction="#siete_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="7" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="ocho" alignment="CENTER" mnemonicParsing="false" onAction="#ocho_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="8" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="nueve" alignment="CENTER" mnemonicParsing="false" onAction="#nueve_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #3b3b3b;" text="9" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="igual" alignment="CENTER" mnemonicParsing="false" onAction="#igual_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #4ec1ff;" text="=" textAlignment="CENTER" textFill="#128a9a" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="resta" alignment="CENTER" mnemonicParsing="false" onAction="#resta_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #323232;" text="–" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="suma" alignment="CENTER" mnemonicParsing="false" onAction="#suma_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #323232;" text="+" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Consolas" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="multiplicacion" alignment="CENTER" mnemonicParsing="false" onAction="#multiplicacion_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #323232;" text="×" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="sobre_uno" alignment="CENTER" mnemonicParsing="false" onAction="#sobreuno_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #323232;" text="¹/ₓ" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="clear_exp" alignment="CENTER" mnemonicParsing="false" onAction="#ce_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #323232;" text="CE" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button fx:id="division" alignment="CENTER" mnemonicParsing="false" onAction="#division_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #323232;" text="÷" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Baskerville Old Face" size="28.0" />
+               </font></Button>
+            <Button fx:id="delete" alignment="CENTER" mnemonicParsing="false" onAction="#delete_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #323232;" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="cuadrado" alignment="CENTER" mnemonicParsing="false" onAction="#cuadrado_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #323232;" text=" x²" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button fx:id="raiz" alignment="CENTER" mnemonicParsing="false" onAction="#raiz_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #313332;" text="²√x" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="clear" alignment="CENTER" mnemonicParsing="false" onAction="#clear_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #323232;" text="C" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button fx:id="porcentaje" alignment="CENTER" mnemonicParsing="false" onAction="#porcente_click" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #323232;" text="\%" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <ImageView fx:id="delete" fitHeight="33.0" fitWidth="63.0" mouseTransparent="true" onMouseClicked="#delete_click" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@signo_delete.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <TextField fx:id="input" alignment="BOTTOM_RIGHT" mouseTransparent="true" prefHeight="92.0" prefWidth="375.0" style="-fx-background-color: #202020; -fx-text-fill: white;">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+      <Label fx:id="prom" alignment="CENTER_RIGHT" layoutX="83.0" layoutY="19.0" prefHeight="17.0" prefWidth="278.0" textFill="#bfbbbb">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
